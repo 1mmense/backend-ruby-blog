@@ -1,9 +1,13 @@
 <%= div_for comment do %>
         <p>
-                <strong>
-                        Posted <%= time_ago_in_words(comment.created_at) %> ago
-                </strong>
-                <br/>
-                <%= comment.body %>
+        	<strong>
+        		Posted <%= time_ago_in_words(comment.created_at) %> ago
+        	</strong>
+        	<br/>
+        	<%= comment.body %>
         </p>
+        <%= link_to 'Delete Comment',
+        						post_comment_path(@post, comment),
+        						method: :delete,
+        						data: { confirm: 'Are you sure?' } %></td>
 <% end %>
