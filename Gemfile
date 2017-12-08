@@ -19,10 +19,16 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'rack-cors'
-
 gem 'rails_12factor'
+gem "rspec-rails", '>= 2.14.1'
 
+######
 gem 'record_tag_helper', '~> 1.0'
+gem 'factory_girl_rails', '~> 4.0'
+gem 'shoulda-matchers', '~> 3.1'
+gem 'faker'
+gem 'database_cleaner', :git => "https://github.com/DatabaseCleaner/database_cleaner.git"
+######
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
